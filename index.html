@@ -10,21 +10,13 @@
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="jquery.countdown.css">
-<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="jquery.countdown.css">
+	<link rel="stylesheet" href="style.css">
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="./bootstrap/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
   </head>
 
@@ -38,15 +30,6 @@
 
       </div>
     </div> <!-- /row -->
-
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 text-center"><div id="defaultCountdown"></div></div>
-    </div> <!-- /row -->
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <h1 class="background-highlight">{{ "2023-08-26 0:00:00 -0500" | date: "%A %B %-d, %Y" }}</h1>
-      </div>
-    </div>
     <div class="row">
       <div class="col-sm-12 text-center">
         <h2 class="background-highlight">August 26, 2023</h2>
@@ -54,26 +37,6 @@
       </div>
     </div>
 
-    <!-- javascript includes
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-    <!-- jquery  -->
-    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
-
-    <!-- countdown code -->
-    <script src="assets/js/jquery.countdown.min.js"></script>
-
-    <!-- start the countdown when the page loads -->
-    <script type="text/javascript">
-  		$(function () {
-  			var holiday = new Date();
-  			holiday = new Date("{{site.utc}}");
-  			$('#defaultCountdown').countdown({until: holiday});
-  			$('#year').text(holiday.getFullYear());
-  		});
-		</script>
-    <!-- end of javascript includes  -->
 
   </body>
 </html>
