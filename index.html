@@ -1,27 +1,46 @@
----
----
+
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% if site.hastag %} {{site.hashtag}} | {% endif %} {% if site.name %} {{site.name}} | {% endif %} {{ site.utc | date: "%B %-d, %Y" }}</title>
+    <title>Melanie and Jamie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{site.description}}">
+    <meta name="description" content="">
     <meta name="author" content="">
-    <meta property="og:image" content="{{site.logo}}"/>
-    <meta property="og:title" content="{{site.hashtag}} | {{ site.utc | date: "%B %-d, %Y" }}"/>
-    <meta property="og:url"  content="{{site.url}}"/>
-    <meta property="og:type"  content="website"/>
 
-    <!-- Font from google -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-    <!-- bootstrap -->
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <!-- countdown css -->
-    <link href="jquery.countdown.css" rel="stylesheet">
-    <!-- custom styles -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Le styles -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="jquery.countdown.css">
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-countdown/1.6.3/jquery.countdown.min.js"></script>
+
+
+
+    <script type="text/javascript">
+      $(function () {
+        var holiday = new Date();
+        holiday = new Date(2023, 8, 26);
+        $('#defaultCountdown').countdown({until: holiday});
+        $('#year').text(austDay.getFullYear());
+      });
+
+    </script>
 
   </head>
 
@@ -29,51 +48,26 @@
 
     <div class="row">
       <div class="col-sm-12 text-center">
-	      <h1 class="background-highlight">{{site.name}}</h1></br>
-	    <h2 class="background-highlight">Website coming soon!</h2></br>
-	       <a href="{{site.externalLink}}"><img src="{{site.logo}}" style="width:40%"/></a>
+        <h1 class="background-highlight">Melanie and Jamie</h1>
+        <h2 class="background-highlight">Website coming soon!</h2>
+         <img src="flag-tag.png" style="width:80%"/>
+
       </div>
     </div> <!-- /row -->
 
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 text-center"><div id="defaultCountdown"></div></div>
     </div> <!-- /row -->
-
     <div class="row">
       <div class="col-sm-12 text-center">
-	      <h1 class="background-highlight">{{ site.utc | date: "%A %B %-d, %Y" }}</h1></br>
-	      <h2 class="background-highlight">Weylin, 175 Broadway, Brooklyn, NY</h2>
+        <h1 class="background-highlight">August 26, 2023</h1>
+        <h2 class="background-highlight">Weylin, 175 Broadway, Brooklyn, NY</h2>
       </div>
     </div>
 
-    {% if site.facebookEventLink %}
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <a href="{{site.facebookEventLink}}">RSVP on facebook</a>
-      </div>
-    </div>
-    {% endif %}
-
-    <!-- javascript includes
+    <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
-    <!-- jquery  -->
-    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
-
-    <!-- countdown code -->
-    <script src="assets/js/jquery.countdown.min.js"></script>
-
-    <!-- start the countdown when the page loads -->
-    <script type="text/javascript">
-  		$(function () {
-  			var holiday = new Date();
-  			holiday = new Date("{{site.utc}}");
-  			$('#defaultCountdown').countdown({until: holiday});
-  			$('#year').text(holiday.getFullYear());
-  		});
-		</script>
-    <!-- end of javascript includes  -->
 
   </body>
 </html>

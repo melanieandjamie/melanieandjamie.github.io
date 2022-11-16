@@ -1,27 +1,25 @@
----
----
-
 body {
   padding-top: 20px; /* 60px to make the container go all the way to the bottom of the topbar */
-  background:{{site.colors.background}};
-  font-family: {{site.fontfamily}};
+
+  background:#000000;
+  font-family: 'Arial', sans-serif;
 }
 #defaultCountdown {
-  color:{{site.colors.secondary}};
+  color:#F28500;
   font-size:2em;
 }
 .hasCountdown {
-	background:none;
-	border:none;
+  background:none;
+  border:none;
 }
 
 h1 {
-	text-transform:uppercase;
-	color:{{site.colors.textcolor}};
+  text-transform:uppercase;
+  color:#FE2C54;
 }
 h2 {
   text-transform:uppercase;
-  color:{{site.colors.textcolor}};
+  color:#FE2C54;
 }
 
 @media(max-width:767px){
@@ -30,10 +28,10 @@ h2 {
 }
 @media(min-width:768px){
   h1 {
-    font-size:4em;
+    font-size:5em;
   }
   h2 {
-    font-size:3em;
+    font-size:4em;
   }
 
 }
@@ -56,5 +54,5 @@ h1 {
 
 }
 .background-highlight {
-  background-color:{{site.colors.primary}};
+  background-color:#FFE5B4;
 }
