@@ -1,6 +1,6 @@
 utc: "2023-08-26 16:00:00 -0500" #Required. The start time of the event. Best to use UTC format, but may work in other date formats too.
 name: "Melanie and Jamie" #Required. The human-readable name of the event
-logo: logo.png #Required. logo for the event. replace this logo in the project or add a new file and change the value of this variable
+logo: BA4E8AD2-2390-4356-BCB2-7F710F2068AA.jpeg #Required. logo for the event. replace this logo in the project or add a new file and change the value of this variable
 description: "Melanie and Jamie are getting married in Brooklyn!"
 externalLink: "http://melanieandjamie.github.io" #Required. link to the main event page. this could be a webpage, a facebook event, an eventbrite page, where ever the main webpage is for your event
 url: #(Optional) the full URL for this countdown page. This is neccesary for facebook share previews
