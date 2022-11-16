@@ -26,20 +26,6 @@
 
     <!-- Fav and touch icons -->
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-countdown/1.6.3/jquery.countdown.min.js"></script>
-
-
-
-    <script type="text/javascript">
-      $(function () {
-        var holiday = new Date();
-        holiday = new Date(2023, 8, 26);
-        $('#defaultCountdown').countdown({until: holiday});
-        $('#year').text(austDay.getFullYear());
-      });
-
-    </script>
-
   </head>
 
   <body>
@@ -48,7 +34,7 @@
       <div class="col-sm-12 text-center">
         <h1 class="background-highlight">Melanie and Jamie</h1>
         <h2 class="background-highlight">Website coming soon!</h2>
-         <img src="flag-tag.png" style="width:80%"/>
+         <img src="photo.jpeg" style="width:80%"/>
 
       </div>
     </div> <!-- /row -->
@@ -58,14 +44,36 @@
     </div> <!-- /row -->
     <div class="row">
       <div class="col-sm-12 text-center">
-        <h1 class="background-highlight">August 26, 2023</h1>
-        <h2 class="background-highlight">Weylin, 175 Broadway, Brooklyn, NY</h2>
+        <h1 class="background-highlight">{{ "2023-08-26 0:00:00 -0500" | date: "%A %B %-d, %Y" }}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h2 class="background-highlight">August 26, 2023</h2>
+        <h3 class="background-highlight">Weylin, 175 Broadway, Brooklyn, NY</h3>
       </div>
     </div>
 
-    <!-- Le javascript
+    <!-- javascript includes
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- jquery  -->
+    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+
+    <!-- countdown code -->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+
+    <!-- start the countdown when the page loads -->
+    <script type="text/javascript">
+  		$(function () {
+  			var holiday = new Date();
+  			holiday = new Date("{{site.utc}}");
+  			$('#defaultCountdown').countdown({until: holiday});
+  			$('#year').text(holiday.getFullYear());
+  		});
+		</script>
+    <!-- end of javascript includes  -->
 
   </body>
 </html>
