@@ -1,4 +1,4 @@
-utc: "2023-08-26 16:00:00 -0500" #Required. The start time of the event. Best to use UTC format, but may work in other date formats too.
+utc: "2023-08-26 0:00:00 -0500" #Required. The start time of the event. Best to use UTC format, but may work in other date formats too.
 name: "Melanie and Jamie" #Required. The human-readable name of the event
 logo: BA4E8AD2-2390-4356-BCB2-7F710F2068AA.jpeg #Required. logo for the event. replace this logo in the project or add a new file and change the value of this variable
 description: "Melanie and Jamie are getting married in Brooklyn!"
