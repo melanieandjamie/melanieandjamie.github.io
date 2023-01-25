@@ -1,36 +1,36 @@
+:root {
+    --background:       #001427;    /* bg dark */
+    --highlight:        #708D81;    /* highlights */
+    --text:             #F4D58D;    /* text color */
+    --textback:         #003F7A;    /* text background */
+}
+
 body {
   padding-top: 20px; /* 60px to make the container go all the way to the bottom of the topbar */
 
-  background:#000000;
-  font-family: 'Arial', sans-serif;
-}
-#defaultCountdown {
-  color:#F28500;
-  font-size:2em;
-}
-.hasCountdown {
-  background:none;
-  border:none;
+  background:  var(--background);
+  font-family: 'Tahoma', sans-serif;
 }
 
 h1 {
-  color:#000000;
+  color: var(--text);
+  font-weight: bold;
 }
 h2 {
   text-transform:uppercase;
-  color:#FE2C54;
+  color: var(--highlight);
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: var(--textback);
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: var(--text);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -39,17 +39,17 @@ h2 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--highlight);
+  /*color: black;*/
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+/*.topnav a.active {
   background-color: #04AA6D;
   color: white;
-}
+}*/
 
-@media(max-width:767px){
+/*@media(max-width:767px){
   h1 {
   }
 }
@@ -82,4 +82,4 @@ h1 {
 }
 .background-highlight {
   background-color:#FFE5B4;
-}
+}*/
