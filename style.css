@@ -9,6 +9,12 @@
   /* text background #EDC967*/
 }
 
+a {
+  color: var(--textback); 
+  background-color: transparent
+  text-decoration: underline;
+}
+
 body {
   /* 60px to make the container go all the way to the bottom of the topbar */
 
